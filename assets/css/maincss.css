@@ -1,0 +1,480 @@
+:root {
+  --primary: #252B3B;
+  --hover: #007fff;
+  --bg-lighter: #f5f4f4;
+  --bg-light: #eceaea;
+  --white: #fff;
+  --secondary: #fd7a35; /*orange*/
+}
+body,html{
+}
+body{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+  line-height: 1.5;
+  color: var(--primary);
+  background: var(--bg-lighter)
+}
+.light{
+  font-weight: 300
+}
+.regular,.normal{
+  font-weight: normal
+}
+.medium{
+  font-weight: 500
+}
+.semibold, b,strong{
+  font-weight: 600
+}
+.bold{
+  font-weight: bold
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Montserrat';
+  font-weight: 600
+}
+h2{
+  font-size:39px;
+}
+h3{
+  font-size:33px;
+}
+h4{
+  font-size:25px;
+}
+h5{
+  font-size:20px;
+}
+h6{
+  font-size:18px;
+}
+.mb-30{
+  margin-bottom: 30px
+}
+.mb-40{
+  margin-bottom: 40px
+}
+.mb-45{
+  margin-bottom: 45px
+}
+.text-warning{
+  color: #ec9324!important
+}
+.text-danger{
+  color: #ad4719!important
+}
+a{
+  color: var(--primary);
+}
+a:hover{
+  text-decoration: none;
+  color: var(--hover)
+}
+
+.page-wrapper{
+  display: flex;
+  justify-content: space-around
+}
+.left-sidebar{
+  width:250px;
+  background: var(--white);
+  min-height: 100vh;
+  padding: 20px 15px 20px 20px
+}
+.burger-logo{
+}
+.burger-logo a{
+  font-size: 20px;
+  color: var(--primary)
+}
+
+.sidebar-menu{
+  font-size: 14px
+}
+.sidebar-mainmenu{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  margin-top: 20px;
+  font-weight: 600
+}
+.sidebar-mainmenu i{
+  font-size: 7px
+}
+.sidebar-mainmenu.collapsed i{
+  transform: rotate(0deg);
+  transition: ease-in-out 0.2s
+}
+.sidebar-mainmenu i{
+  transform: rotate(90deg);
+  transition: ease-in-out 0.2s
+}
+
+.sidebar-menu ul{
+  margin: 0
+}
+.sidebar-menu ul li{
+  display: block
+}
+.sidebar-menu ul li a{
+  display: block;
+  padding: 9px 18px
+}
+.sidebar-menu ul li a.active{
+  background: var(--primary);
+  color: var(--white);
+  display: inline-block;
+  border-radius: 20px
+}
+
+.content-wrapper{
+  width:calc(100% - 250px);
+  padding: 0 20px;
+}
+.navbar.navbar-top{
+  padding: 20px 15px
+}
+.navbar-top h4{
+  min-width: 20%
+}
+.navbar-top .form-inline{
+  position: relative;
+  width: 60%
+}
+.navbar-top .form-inline i{
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 5;
+  left: 20px;
+}
+.navbar-top .form-inline .form-control{
+  background: var(--bg-light);
+  color: var(--primary);
+  min-height: 50px;
+  font-weight: 300;
+  width: 100%;
+  max-width: 600px;
+  border-radius: 25px;
+  padding-left: 50px;
+  border: 0
+}
+
+.navbar-expand-sm .navbar-nav .dropdwn-user .nav-link{
+  background: var(--white);
+  border-radius: 30px;
+  padding:4px 15px 4px 4px;
+  color: var(--primary);
+}
+.dropdwn-user a span{
+  display: inline-flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-lighter);
+  margin-right: 5px
+}
+
+
+.page-content{
+  display: flex;
+}
+.page-content-left{
+  width:calc(100% - 470px);
+}
+.page-content-right{
+  padding-left: 65px;
+  width: 470px;
+}
+.page-content-right .content{
+  background: var(--white);
+  padding: 20px 15px 20px 25px;
+  border-radius: 15px;
+  position: relative
+}
+.btn-file {
+  position: relative;
+  overflow: hidden;
+  border: 1px dashed #3186C1 ;
+  background: #3186C110;
+  border-radius: 14px;
+  height: 52px;
+  line-height: 38px
+}
+.btn-file:hover{
+  background: #388ac3;
+  color:var(--white)
+}
+
+.btn-file input[type=file] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+  font-size: 100px;
+  text-align: right;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  background: red;
+  cursor: inherit;
+  display: block;
+}
+
+.attachment{
+  position: absolute;
+  left: 0;
+  z-index: 5;
+  margin-left: -56px;
+}
+.attachment .border{
+  position: absolute;
+  top: -4px;
+  right: 0;
+  width: 4px;
+  height: 55px;
+  background: #3186c1;
+  border-radius: 0 5px 5px 0;
+}
+.attachment a{
+  display: flex;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  margin: 0 12px 10px 0;
+  color: #ec9324;
+}
+.attachment a:hover, .attachment a.active{
+  color: #3186c1;
+  background: #eaeef2
+}
+
+
+.doc-list i{
+  color: #8c8c8c
+}
+.doc-list a:hover i{
+  color: var(--hover)
+}
+.doc-list li{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.doc-list li+li{
+  margin-top: 10px
+}
+.doc-list li .lbl {
+  width:60%;
+  display: flex
+}
+.doc-list li .lbl span.img {
+  width: 36px
+}
+.doc-list li .lbl span {
+  width: calc(100% - 36px);
+  word-break: break-all
+}
+.doc-list li .actions{
+  width:35%
+}
+.doc-list li .actions a+a{
+  margin-left: 20px
+}
+
+.page-subheader a{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: var(--white);
+  transition: ease-in-out 0.1s;
+  font-size: 20px
+}
+.page-subheader a:hover{
+  background: var(--secondary);
+  color: var(--white)
+}
+.page-subheader a+a{
+  margin-left: 20px
+}
+.fa-rotate-45{
+  transform: rotate(-45deg)
+}
+.page-subheader .counter{
+  width:26px;
+  height: 26px;
+  border-radius: 50%;
+  background: var(--secondary);
+  color: var(--white);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  z-index: 5;
+  font-size: 16px
+}
+
+.mycard{
+  padding: 20px 40px;
+  border-radius: 15px;
+  border: 0;
+  margin-bottom: 10px
+}
+
+.card-profile{
+  display:flex;
+  flex-direction: row;
+  padding: 0
+}
+.profile-image{
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px
+}
+.profile-image span{
+  width: 160px;
+  height: 160px;
+  border-radius: 50%
+}
+.profile-content{
+  width: calc(100% - 250px);
+  padding: 20px 40px 20px 0
+}
+.profile-content h5{
+  margin: 0 30px 0 40px;
+  font-size: 23px;
+  font-weight: normal
+}
+.profile-content p{
+  font-size: 18px;
+}
+.card-profile-tabs{
+  border-top: 1px solid #e7e7e7;
+  padding-top: 15px;
+  text-align: center
+}
+
+.mycard .badge{
+  margin: 0;
+  font-weight: normal;
+  font-size: 14px;
+  background: var(--bg-lighter);
+  padding: 8px 12px;
+  border-radius: 15px
+}
+.mycard .badge.badge-warning{
+  background: var(--secondary);
+  color: var(--white)
+}
+.mycard .badge+.badge{
+  margin: 0 0 5px 5px
+}
+
+.card-profile-tabs .nav-tabs{
+  border: 0
+}
+.card-profile-tabs .nav-tabs .nav-link{
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+  border-bottom: 2px solid transparent;
+  color: #787C85;
+  padding: 15px 30px
+}
+.card-profile-tabs .nav-tabs .nav-link:hover{
+  color: var(--secondary)
+}
+.card-profile-tabs .nav-tabs .nav-item.show .nav-link, .card-profile-tabs .nav-tabs .nav-link.active{
+  color: var(--secondary);
+  border-bottom-color:var(--secondary) ;
+  font-weight: 600
+}
+.mycard h5{
+  margin-bottom: 15px
+}
+.mycard p:last-child{
+  margin-bottom: 0
+}
+
+.basic-left{
+  width: 130px;
+}
+.basic-right{
+  width: calc(100% - 130px)
+}
+.exp-left{
+  width: 60px;
+  margin-right: 15px
+}
+.exp-right{
+  width: calc(100% - 75px)
+}
+.row-experience:not(:last-child){
+  padding-bottom: 20px
+}
+.row-experience h5{
+  text-transform: uppercase
+}
+.row-experience p{
+  margin-bottom: 10px
+}
+.row-experience+.row-experience .exp-right,.row-experience+.row-experience .exp-left{
+  padding-top: 20px;
+}
+.row-experience+.row-experience .exp-right{
+  border-top: 1px solid #c4c4c4;
+}
+p.elipsis{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow:ellipsis
+}
+
+@media screen and (max-width: 1600px){
+
+}
+
+@media screen and (max-width: 1366px){
+
+}
+
+@media screen and (max-width: 1199px){
+
+}
+
+@media screen and (max-width: 1024px){
+
+}
+
+@media screen and (max-width: 991px){
+
+}
+@media screen and (max-width: 860px){
+
+}
+@media screen and (max-width: 767px){
+
+}
+
+@media screen and (max-width: 575px){
+
+}
+
+@media screen and (max-width: 375px){
+
+}
