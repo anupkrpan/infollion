@@ -333,6 +333,7 @@ a:hover{
   border: 0;
   margin-bottom: 10px
 }
+.mycard:last-child{margin-bottom: 50px}
 
 .card-profile{
   display:flex;
@@ -375,14 +376,12 @@ a:hover{
   font-size: 14px;
   background: var(--bg-lighter);
   padding: 8px 12px;
-  border-radius: 15px
+  border-radius: 15px;
+  margin: 0 5px 8px 0
 }
 .mycard .badge.badge-warning{
   background: var(--secondary);
   color: var(--white)
-}
-.mycard .badge+.badge{
-  margin: 0 0 5px 5px
 }
 
 .card-profile-tabs .nav-tabs{
@@ -411,32 +410,32 @@ a:hover{
   margin-bottom: 0
 }
 
-.basic-left{
+.basic-dtls-left{
   width: 130px;
 }
-.basic-right{
+.basic-dtls-right{
   width: calc(100% - 130px)
 }
-.exp-left{
+.iconic-data-left{
   width: 60px;
   margin-right: 15px
 }
-.exp-right{
+.iconic-data-right{
   width: calc(100% - 75px)
 }
-.row-experience:not(:last-child){
+.row-iconic-data:not(:last-child){
   padding-bottom: 20px
 }
-.row-experience h5{
-  text-transform: uppercase
+.row-iconic-data h6{
+/*  text-transform: uppercase*/
 }
-.row-experience p{
+.row-iconic-data p{
   margin-bottom: 10px
 }
-.row-experience+.row-experience .exp-right,.row-experience+.row-experience .exp-left{
+.row-iconic-data+.row-iconic-data .iconic-data-right,.row-iconic-data+.row-iconic-data .iconic-data-left{
   padding-top: 20px;
 }
-.row-experience+.row-experience .exp-right{
+.row-iconic-data+.row-iconic-data .iconic-data-right{
   border-top: 1px solid #c4c4c4;
 }
 p.elipsis{
@@ -444,6 +443,23 @@ p.elipsis{
   overflow: hidden;
   text-overflow:ellipsis
 }
+
+.award-left{
+  width: 120px;
+}
+.award-right{
+  width: calc(100% - 120px)
+}
+
+.row-social-links{flex-wrap: wrap}
+.social-item{display: inline-flex; align-items: center; width: 200px; margin-bottom: 20px}
+.social-item img{margin-right: 15px}
+.social-item a{font-size: 14px; font-weight: 600; color: #2779C3}
+
+.mycard.snippet p:not(.medium){margin-bottom: 45px}
+.mycard.snippet p:last-child{margin-bottom: 20px}
+
+
 
 @media screen and (max-width: 1600px){
 
